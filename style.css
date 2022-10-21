@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: white;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: cyan;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid green;
+    width: 80%;
+    
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "bree Serif";
+}
+
+#dataTable tr {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Roboto";
+}
+.pop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(98, 245, 7);
+    padding: 50px 30px 30px;
+    border-radius: 30px;
+    width: 95%;
+    height: 98vh;
+}
+.remove{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background: rgb(98, 245, 7);
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 100000;
+}
+.remove i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 40px;
+}
+.errorMsg {
+    color: Red;
+}
+.active{
+    display: none;
+}
