@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72b8a43f40.js" crossorigin="anonymous"></script>
+    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-container container-fluid pt-3">
+        <!-- <div class="row p-4"> -->
+            <!-- <div class="col-12"> -->
+                <div class="form-container shadow-lg">
+                    <form id="employeeForm">
+                        <h1 class="heading text-center mb-4">Employee Details</h1>
+                        <div class="mb-3">
+                            <label for="empName">
+                                <h5> Employee Name</h5>
+                            </label>
+                            <input type="text" name="empName" id="empName" class="form-control" />
+                            <p id="errorName"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="empemail">
+                                <h5> Employee Email</h5>
+                            </label>
+                            <input type="text" name="empemail" id="empemail" class="form-control" />
+                            <p id="errorEmail"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h5 class="head ">Working Status</h5>
+                            <select name="workStatus" id="workStatus" class="form-control">
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="head ">Employee Designation</h5>
+                            <select name="empDesignation" id="empDesignation" class="form-control">
+                                <option value="Btech">B Tech</option>
+                                <option value="Mtech">M Tech</option>
+                                <option value="Bsc Computers">Bsc Computers</option>
+                                <option value="BE">BE</option>
+                                <option value="Msc Computers">Msc Computers</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <h5 class="head">Gender</h5>
+                            <input type="radio" id="genderMale" name="gender" value="Male" checked>
+                            <label for="genderMale" class="mr-2">Male</label>
+                            <input type="radio" id="genderFemale" name="gender" value="Female">
+                            <label for="genderFemale" class="mr-2">Female</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            <!-- </div> -->
+        <!-- </div>
+        <div class="row p-4"> -->
+            <!-- <div class="col-12"> -->
+                <div><button class="btn btn-success mb-4 mt-4" id="button">Get Data</button></div>
+                <div id="tableContainer " class="pop ">
+                    
+                    <h3 class=" text-center">List of Employee</h3>
+                    <table id="dataTable" class="table table-responsive-sm" border="5">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Designation</th>
+                                <th scope="col">Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                    <span id="removeBtn" class="remove"><i class="fa-sharp fa-solid fa-xmark"></i></i></span>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
